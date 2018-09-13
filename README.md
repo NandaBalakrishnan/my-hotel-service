@@ -39,7 +39,7 @@ Description : This will create a new hotel with its details
 
 Required Headers : Accept = "application/json" Authorization = "Basic(base64encode(username:password)" Content-Type = "application/json"
 
-Request Body : { "id": 999, name="IBIS" "description": "grt_hotel", city="Bangalore",rating=4}
+Request Body :{"id": 999, "name":"IBIS" ,"description": "grt_hotel", "city":"Bangalore","rating":4}
 
 ## PUT  /hotels/details/
 
@@ -47,7 +47,7 @@ Description : This will update a existing hotel details
 
 Required Headers : Accept = "application/json" Authorization = "Basic(base64encode(username:password)"  Content-Type = "application/json"
 
-Request Body : Request Body : { "id": 999, name="IBIS" "description": "grt_hotel", city="Bangalore",rating=4}
+Request Body : Request Body : {"id": 999, "name":"IBIS" ,"description": "grt_hotel", "city":"Bangalore","rating":4}
 
 ## DELETE  /hotels/details/"hotelId"
 
