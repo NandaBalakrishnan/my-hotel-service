@@ -55,16 +55,16 @@ public class HotelDataApplicationTests {
 	@Test
 	public void getAllHotelDataTest() {
 		HotelData hotelData = new HotelData(1, "IBIS", "testDesc", "testCity", 2);
-		List<hotelData> list = new ArrayList<>();
+		List<HotelData> list = new ArrayList<>();
 		list.add(hotelData);
 		Mockito.when(hotelDataRespository.findAll()).thenReturn(list);
-		List<hotelData> response = hotelDataService.getAllHotels();
+		List<HotelData> response = hotelDataService.getAllHotels();
 		assert (response.size() == 1);
 		assert (response.get(0).getHotelId() == list.get(0).getHotelId());
-		assert (response.get(0).getName().matches(list.get(0).hotelData.getName()));
+		assert (response.get(0).getName().matches(list.get(0).getName()));
 		assert (response.get(0).getDescription().matches(list.get(0).getDescription()));
-		assert (response.get(0).getCity().matches(list.get(0).hotelData.getCity()));
-		assert (response.get(0).getRating() == list.get(0).hotelData.getRating());
+		assert (response.get(0).getCity().matches(list.get(0).getCity()));
+		assert (response.get(0).getRating() == list.get(0).getRating());
 		
 	}
 }
