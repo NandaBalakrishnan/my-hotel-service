@@ -7,6 +7,7 @@
 1) Replace the credentials of mongoDB in the application.properties file
 2) From command prompt navigate to the folder where the pom.xml file located
 3) Run the command mvn clean package
+4) Run the mvn install will create the jar under ./target/**.jar 
 4) Jar will be created in the folder ./target/**.jar
 5) Run the jar by the command java -jar target/**.jar
 6) In case of IDE, run the project as spring boot app
