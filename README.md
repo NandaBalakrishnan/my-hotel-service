@@ -14,7 +14,8 @@
 
 # Configuration
  * port no : 8086 (configurable in application.properties)
- * MongoDB : This api connects to the onprem DB as well(can be replaced with mongoDB cloud (Atlas). The Connection string is configurable in application.properties)
+ * MongoDB : This api connects to the onprem DB as well(can be replaced with mongoDB cloud (Atlas). The Connection string is configurable in application.properties). MongoDB should be up and running in the same machine where the service is deployed.
+    
  * Basic Authentication: username and password can be configurable.
  * authorization header is Basic (base64encode(username:password)
 
