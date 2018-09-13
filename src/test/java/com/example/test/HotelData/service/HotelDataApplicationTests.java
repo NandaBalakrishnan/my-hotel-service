@@ -42,7 +42,7 @@ public class HotelDataApplicationTests {
 	@Test
 	public void updateHotelDataTest() {
 		HotelData hotelData = new HotelData(1, "IBIS", "testDesc", "testCity", 2);
-		Mockito.when(hotelDataRespository.exists(hotelData.getHotelId())).thenReturn(true);
+		Mockito.when(hotelDataRespository.existsById(hotelData.getHotelId())).thenReturn(true);
 		Mockito.when(hotelDataRespository.save(hotelData)).thenReturn(hotelData);
 		HotelData response = hotelDataService.updateHotel(hotelData);
 		assert (response.getHotelId() == hotelData.getHotelId());
