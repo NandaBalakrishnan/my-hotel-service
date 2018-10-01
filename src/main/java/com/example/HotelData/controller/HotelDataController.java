@@ -59,8 +59,7 @@ public class HotelDataController {
 	}
 
 	@RequestMapping(method = RequestMethod.PUT, consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
-	public ResponseEntity<HotelData> update(@RequestBody HotelData hotelData,
-			@RequestHeader("Authorization") String accessToken) throws UnsupportedEncodingException {
+	public ResponseEntity<HotelData> update(@RequestBody HotelData hotelData) throws UnsupportedEncodingException {
 		HotelData response = null;
 
 		response = hotelDataService.updateHotel(hotelData);
